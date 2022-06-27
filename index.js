@@ -96,15 +96,27 @@ let passwordOneEl = document.getElementById('passwordone-el');
 let passwordTwoEl = document.getElementById('passwordtwo-el');
 let buttonEl = document.getElementById('button-el');
 
-function randomCharacter() {
-  // Loops a random character 15 times
-  for (i = 0; i < 15; i++) {
-    // Generates one random number
-    let random = Math.floor(Math.random() * characters.length);
+buttonEl.addEventListener('click', generatePasswords);
 
-    // Logs one random character within the characters array
-    console.log(characters[random]);
-  }
+function generatePasswords() {
+  passwordOne();
+  passwordTwo();
 }
 
-randomCharacter();
+function passwordOne() {
+  let randomPasswordOne = '';
+  for (i = 0; i < 15; i++) {
+    let random = Math.floor(Math.random() * characters.length);
+    randomPasswordOne += characters[random];
+  }
+  passwordOneEl.textContent = randomPasswordOne;
+}
+
+function passwordTwo() {
+  let randomPasswordTwo = '';
+  for (i = 0; i < 15; i++) {
+    let random = Math.floor(Math.random() * characters.length);
+    randomPasswordTwo += characters[random];
+  }
+  passwordTwoEl.textContent = randomPasswordTwo;
+}
