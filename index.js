@@ -97,12 +97,14 @@ let passwordTwoEl = document.getElementById('passwordtwo-el');
 let buttonEl = document.getElementById('button-el');
 
 function randomCharacter() {
-  let random = Math.floor(Math.random() * characters.length);
+  // Loops a random character 15 times
+  for (i = 0; i < 15; i++) {
+    // Generates one random number
+    let random = Math.floor(Math.random() * characters.length);
+
+    // Logs one random character within the characters array
+    console.log(characters[random]);
+  }
 }
 
-function generatePassword() {
-  passwordOneEl.textContent = randomCharacter();
-  passwordTwoEl.textContent = randomCharacter();
-}
-
-generatePassword();
+randomCharacter();
