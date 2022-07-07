@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+  --primary: #1f2937;
+  --accent: #10b981;
+  --background: #1c1c1c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  color: whitesmoke;
+  font-family: 'Inter', sans-serif;
+  background: var(--background);
+}
+
+.container {
+  width: 550px;
+  height: 550px;
+  /* margin: 50px 25px; */
+  margin: 50px auto;
+  padding: 75px 50px;
+  background: var(--primary);
+}
+
+h1 {
+  font-size: 49px;
+  font-weight: 800px;
+}
+
+span {
+  color: var(--accent);
+}
+
+.password-background {
+  border: 1px solid pink;
+}

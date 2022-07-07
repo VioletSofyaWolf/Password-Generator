@@ -94,9 +94,9 @@ const characters = [
 
 let passwordOneEl = document.getElementById('passwordone-el');
 let passwordTwoEl = document.getElementById('passwordtwo-el');
-let buttonEl = document.getElementById('button-el');
+let generateBtn = document.getElementById('generate-btn');
 
-buttonEl.addEventListener('click', generatePasswords);
+generateBtn.addEventListener('click', generatePasswords);
 
 function generatePasswords() {
   passwordOne();
