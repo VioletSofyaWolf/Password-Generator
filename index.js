@@ -120,3 +120,14 @@ function passwordTwo() {
   }
   passwordTwoEl.textContent = randomPasswordTwo;
 }
+
+// Working on copy to clipboard function
+
+// function copyToClipboard() {
+//   passwordOneEl.ariaSelected();
+//   passwordOneEl.setSelectionRange(0, 99999);
+//   navigator.clipboard.writeText(passwordOneEl.value);
+//   alert('Copied');
+// }
+
+// copyToClipboard();
